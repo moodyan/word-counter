@@ -66,7 +66,7 @@ namespace WordCounter
     {
       // arrange
       int expectedResult = 2;
-      RepeatCounter newCounter = new RepeatCounter("horse", "A Horse is a horse");
+      RepeatCounter newCounter = new RepeatCounter("Horse", "A Horse is a horse");
 
       // act
       int result = newCounter.CountRepeats();

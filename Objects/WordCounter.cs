@@ -28,10 +28,11 @@ namespace WordCounter.Objects
     }
     public int CountRepeats()
     {
-      string[] words = _inputTextBlock.ToLower().Split(' ');
-      foreach (string word in words)
+      string searchWord = _inputSearchTerm.ToLower();
+      string[] textBlockWords = _inputTextBlock.ToLower().Split(' ');
+      foreach (string word in textBlockWords)
       {
-        if (_inputSearchTerm == word)
+        if (searchWord == word)
         {
           _totalMatches ++;
         }
