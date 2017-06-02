@@ -22,12 +22,14 @@ namespace WordCounter
     [Fact]
     public void CountRepeats_ExactMatch_true()
     {
-      //Arrange
+      // arrange
       int expectedResult = 1;
       RepeatCounter newCounter = new RepeatCounter("horse", "horse");
-      //Act
+
+      // act
       int result = newCounter.CountRepeats();
-      //Assert
+
+      // assert
       Assert.Equal(expectedResult, result);
     }
   }

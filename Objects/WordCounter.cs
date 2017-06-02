@@ -28,6 +28,10 @@ namespace WordCounter.Objects
     }
     public int CountRepeats()
     {
+      if (_inputSearchTerm == _inputTextBlock)
+      {
+        _totalMatches ++;
+      }
       return _totalMatches;
     }
   }
