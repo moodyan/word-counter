@@ -60,5 +60,19 @@ namespace WordCounter
       // assert
       Assert.Equal(expectedResult, result);
     }
+
+    [Fact]
+    public void CountRepeats_IgnoresCase_true()
+    {
+      // arrange
+      int expectedResult = 2;
+      RepeatCounter newCounter = new RepeatCounter("horse", "A Horse is a horse");
+
+      // act
+      int result = newCounter.CountRepeats();
+
+      // assert
+      Assert.Equal(expectedResult, result);
+    }
   }
 }
