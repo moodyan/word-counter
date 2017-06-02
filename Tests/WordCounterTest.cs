@@ -5,7 +5,7 @@ namespace WordCounter
 {
   public class RepeatCounterTest
   {
-    [Fact]
+    [Fact] //Test 1
     public void CountRepeats_ForNoMatch_true()
     {
       // arrange
@@ -19,7 +19,7 @@ namespace WordCounter
       Assert.Equal(expectedResult, result);
     }
 
-    [Fact]
+    [Fact] //Test 2
     public void CountRepeats_ForExactMatch_true()
     {
       // arrange
@@ -33,7 +33,7 @@ namespace WordCounter
       Assert.Equal(expectedResult, result);
     }
 
-    [Fact]
+    [Fact] //Test 3
     public void CountRepeats_ForOneMatch_true()
     {
       // arrange
@@ -47,11 +47,11 @@ namespace WordCounter
       Assert.Equal(expectedResult, result);
     }
 
-    [Fact]
+    [Fact] //Test 4
     public void CountRepeats_ForMultipleMatches_true()
     {
       // arrange
-      int expectedResult = 2;
+      int expectedResult = 3;
       RepeatCounter newCounter = new RepeatCounter("horse", "A horse is a horse, of course, of course, and no one can talk to a horse of course");
 
       // act
@@ -61,7 +61,7 @@ namespace WordCounter
       Assert.Equal(expectedResult, result);
     }
 
-    [Fact]
+    [Fact] //Test 5
     public void CountRepeats_IgnoresCase_true()
     {
       // arrange

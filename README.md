@@ -12,12 +12,11 @@ _A simple app where a user can enter in a block of text and a specific word. The
 
 | Description  | Why  | Input Example | Output Example |
 | ------------- | ------------- | ------------- |
-| The program searches the inputted string for the word the user entered and returns 0 if not found.  | Simply compares words that don't match. No change in output is required.  | Text: "horse" Word: "cow"   | "0"  |
-| The program searches the inputted string for the exact word the user entered and returns 1 if found.  | Somewhat simply has to compare words to see if they match.  | Text: "horse" Word: "horse"   | "1"  |
-| The program searches the inputted string for the exact word the user entered and counts the number of times it appears.  | Adds some complexity to the program because it has to search multiple words in a string to find the exact inputted search term.  | Text: "No one can talk to a horse of course" Word: "horse"   | "1"  |
-| The program searches the inputted string for the exact word the user entered and counts the number of times it appears.  | Adds some complexity to the program because it has to find the number of times the exact word appears in the given text and add that to a running total.  | Text: "A horse is a horse, of course, of course, and no one can talk to a horse of course" Word: "horse"   | "2"  |
-| The program counts the number of times the inputted word is used, ignoring case.  | Adds to complexity because the program automatically sees these as two different words, so we have to tell the program to find all instances.  | Text: "A Horse is a horse" Word: "horse"   | "2"  |
-| The program counts the number of times the inputted word is used, ignoring punctuation at the beginning and end of a word.  | Adds to complexity because the program automatically recognizes the punctuation as part of the word so we have to tell the program to remove them.  | Text: "A horse is a horse, of course, of course, and no one can talk to a horse of course" Word: "horse"   | "Found 3 times."  |
+| 1. The program searches the inputted string for the word the user entered and returns 0 if not found.  | Simply compares words that don't match. No change in output is required.  | Text: "horse" Word: "cow"   | "0"  |
+| 2. The program searches the inputted string for the exact word the user entered and returns 1 if found.  | Somewhat simply has to compare words to see if they match.  | Text: "horse" Word: "horse"   | "1"  |
+| 3. The program searches the inputted string for the exact word the user entered and counts the number of times it appears.  | Adds some complexity to the program because it has to search multiple words in a string to find the exact inputted search term.  | Text: "No one can talk to a horse of course" Word: "horse"   | "1"  |
+| 4. The program searches the inputted string for the exact word the user entered and counts the number of times it appears.  | Adds some complexity to the program because it has to find the number of times the exact word appears in the given text and add that to a running total.  | Text: "A horse is a horse, of course, of course, and no one can talk to a horse of course" Word: "horse"   | "3"  |
+| 5. The program counts the number of times the inputted word is used, ignoring case.  | Adds to complexity because the program automatically sees these as two different words, so we have to tell the program to find all instances.  | Text: "A Horse is a horse" Word: "Horse"   | "2"  |
 
 ## Setup/Installation Requirements
 

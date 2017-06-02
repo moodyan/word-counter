@@ -30,9 +30,10 @@ namespace WordCounter.Objects
     {
       string searchWord = _inputSearchTerm.ToLower();
       string[] textBlockWords = _inputTextBlock.ToLower().Split(' ');
-      foreach (string word in textBlockWords)
+
+      for (int i=0; i < textBlockWords.Length; i++)
       {
-        if (searchWord == word)
+        if (textBlockWords[i].Contains(searchWord))
         {
           _totalMatches ++;
         }
