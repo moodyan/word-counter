@@ -18,5 +18,17 @@ namespace WordCounter
       // assert
       Assert.Equal(expectedResult, result);
     }
+
+    [Fact]
+    public void CountRepeats_ExactMatch_true()
+    {
+      //Arrange
+      int expectedResult = 1;
+      RepeatCounter newCounter = new RepeatCounter("horse", "horse");
+      //Act
+      int result = newCounter.CountRepeats();
+      //Assert
+      Assert.Equal(expectedResult, result);
+    }
   }
 }

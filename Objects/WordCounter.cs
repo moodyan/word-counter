@@ -22,10 +22,10 @@ namespace WordCounter.Objects
     {
       return _inputTextBlock;
     }
-    // public int GetTotalMatches()
-    // {
-    //   return _totalMatches;
-    // }
+    public int GetTotalMatches()
+    {
+      return _totalMatches;
+    }
     public int CountRepeats()
     {
       return _totalMatches;
