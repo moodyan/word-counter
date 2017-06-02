@@ -1,3 +1,34 @@
-p {
+body {
   font-family: sans-serif;
+  text-align: center;
+  background-color: #b5b5b7;
+  color: #252839;
+}
+
+.jumbotron {
+  background-color: #b5b5b7;
+  color: white;
+}
+
+#left-col {
+  background-color: white;
+  float: left;
+  width: 50%;
+  height: 300px;
+  padding: 20px;
+
+}
+
+textarea {
+  width: 100%;
+  height: 215px;
+}
+
+#right-col {
+  background-color: grey;
+  float: right;
+  width: 50%;
+  height: 300px;
+  padding: 20px;
+
 }
