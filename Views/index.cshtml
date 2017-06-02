@@ -1,0 +1,24 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>Word Counter</h1>
+    <p>Use the form below to enter a word and a block of text. The program will return how many times the word is repeated in the text.</p>
+  </div>
+</div>
+
+<form action="/" method="post">
+  <div class="form-group">
+    <div class="row">
+      <label for="user-search-word">Enter the word you want to search for:</label>
+      <input type="text" name="user-search-word">
+    </div>
+    <div class="row">
+      <label for="user-text">Enter the block of text you want to search:</label>
+      <textarea name="user-text"></textarea>
+    </div>
+</div>
+  <button type="submit" class="btn">Submit</button>
+</form>
