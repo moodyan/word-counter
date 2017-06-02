@@ -6,7 +6,7 @@ namespace WordCounter.Objects
   {
     private string _inputSearchTerm;
     private string _inputTextBlock;
-    // private int _totalMatches = 0;
+    private int _totalMatches = 0;
 
     public RepeatCounter(string search, string text)
     {
@@ -28,7 +28,7 @@ namespace WordCounter.Objects
     // }
     public int CountRepeats()
     {
-      return 0;
+      return _totalMatches;
     }
   }
 }
