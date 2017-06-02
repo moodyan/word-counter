@@ -28,7 +28,7 @@ namespace WordCounter.Objects
     // }
     public int CountRepeats()
     {
-      return 3;
+      return 0;
     }
   }
 }
