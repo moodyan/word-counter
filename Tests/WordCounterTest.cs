@@ -32,5 +32,19 @@ namespace WordCounter
       // assert
       Assert.Equal(expectedResult, result);
     }
+
+    [Fact]
+    public void CountRepeats_OneMatch_true()
+    {
+      // arrange
+      int expectedResult = 1;
+      RepeatCounter newCounter = new RepeatCounter("horse", "no one can talk to a horse of course");
+
+      // act
+      int result = newCounter.CountRepeats();
+
+      // assert
+      Assert.Equal(expectedResult, result);
+    }
   }
 }
