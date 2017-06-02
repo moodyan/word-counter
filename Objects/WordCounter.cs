@@ -28,9 +28,13 @@ namespace WordCounter.Objects
     }
     public int CountRepeats()
     {
-      if (_inputSearchTerm == _inputTextBlock)
+      string[] words = _inputTextBlock.Split(' ');
+      foreach (string word in words)
       {
-        _totalMatches ++;
+        if (_inputSearchTerm == word)
+        {
+          _totalMatches ++;
+        }
       }
       return _totalMatches;
     }
