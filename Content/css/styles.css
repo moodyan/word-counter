@@ -36,7 +36,16 @@ textarea {
   color: white;
 }
 
-a {
+a:hover {
   color: #f2b632;
-  background-color: white;
+}
+
+#inputted-text {
+  min-height: 150px;
+  height: auto;
+  background-color: lightgrey;
+}
+
+#inputted-text h3 {
+  color: white;
 }

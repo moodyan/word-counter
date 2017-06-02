@@ -10,6 +10,11 @@ else {
   <h3><strong>"@Model.GetInputSearchTerm()"</strong> appears <strong>@Model.GetTotalMatches()</strong> times in the searched text.</h3>
 }
 
-<p>@Model.GetInputTextBlock()</p>
+
+
+<div class="row" id="inputted-text">
+  <h3>YOU SEARCHED:</h3>
+  <p>@Model.GetInputTextBlock()</p>
+</div>
 
 <p><a href="/">Enter a new search.</a></p>
