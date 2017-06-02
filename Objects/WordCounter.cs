@@ -28,7 +28,7 @@ namespace WordCounter.Objects
     }
     public int CountRepeats()
     {
-      string[] words = _inputTextBlock.Split(' ');
+      string[] words = _inputTextBlock.ToLower().Split(' ');
       foreach (string word in words)
       {
         if (_inputSearchTerm == word)
