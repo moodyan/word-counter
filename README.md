@@ -11,7 +11,7 @@ _A simple app where a user can enter in a block of text and a specific word. The
 ## Program Specifications
 
 | Description  | Why  | Input Example | Output Example |
-| ------------- | ------------- | ------------- |
+| ------------- | ------------- | ------------- | ------------- |
 | 1. The program searches the inputted string for the word the user entered and returns 0 if not found.  | Simply compares words that don't match. No change in output is required.  | Text: "horse" Word: "cow"   | "0"  |
 | 2. The program searches the inputted string for the exact word the user entered and returns 1 if found.  | Somewhat simply has to compare words to see if they match.  | Text: "horse" Word: "horse"   | "1"  |
 | 3. The program searches the inputted string for the exact word the user entered and counts the number of times it appears.  | Adds some complexity to the program because it has to search multiple words in a string to find the exact inputted search term.  | Text: "No one can talk to a horse of course" Word: "horse"   | "1"  |
